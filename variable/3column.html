@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header,footer {
+            flex:0 0 50px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .main {
+            flex: 1;
+        }
+        .nav, .aside {
+            flex: 0 0 100px;
+            background-color: green;
+        }
+        .nav {
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 三栏布局  不用圣杯布局   -->
+    <!-- 语义化 -->
+    <div class="wrap">
+        <header>头部</header>
+        <div class="content">
+            <main class="main">内容区</main>
+            <nav class="nav">侧边导航</nav>
+            <aside class="aside">侧边栏</aside>
+        </div>
+        <footer>底部</footer>
+    </div>  
+</body>
+</html>
