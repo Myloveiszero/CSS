@@ -1,0 +1,92 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.body {
+    background: url("./cat/maoshenti.png");
+    width: 117px;
+    height: 201px;
+    position: absolute;/*absolute: 绝对定位,相对于父级第一个设置了定位属性来定位，如果没有，相对于body； relative：相对定位*/
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+    transform: translate3d(-50%,-50%,0);
+}
+.weiba {
+    position: absolute;
+    background: url("./cat/maowei.png");  
+    width: 64px;
+    height: 194px;   
+    top: -182px; 
+    animation: ani 3s ease-in-out infinite alternate;
+    transform-origin: 100% 100%;
+}
+.maozhua {
+    background: url("./cat/maozhua.png");
+    position: absolute;
+    width: 34px;
+    height: 81px;
+    left: 65%;
+    top: 90%;
+    animation: ani1 3s ease-in-out infinite alternate;
+    transform-origin: 0% 0%;
+}
+.maoyan1 {
+    background: url('./cat/maoyan1.png');
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 65%;
+    top: 84%;
+}
+.maoyan2 {
+    background: url('./cat/maoyan2.png');
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 80%;
+    top: 90%;
+}
+.maozui {
+    background: url('./cat/maozui.png');
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 66%;
+    top: 92%;
+}
+/*关键帧，动画里的几个关键点*/
+@keyframes ani{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+     100% {
+         transform: rotate(0deg);
+     }   
+}
+@keyframes ani1{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+     100% {
+         transform: rotate(0deg);
+     }   
+}
